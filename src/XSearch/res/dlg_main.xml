@@ -1,0 +1,69 @@
+﻿<layer title="X Search" width="750" height="89" appwin="1" resize="0">
+    <header class="deepbluebg"  height="89">
+        <imgbtn id="60001" class="linkimage" skin="closebtn" pos="-25,2"/>
+        <!--  搜索框   -->
+        <realwnd id="3040" pos="186,26,650,56"/>
+        <!--按钮-->
+        <imgbtn id="2009" class="linkimage" skin="detailsearch"  pos="641,60"  sub="0"/>
+        <imgbtn id="2007" class="linkimage" skin="lucase"  sub="0" pos="570,60"/>
+        <text id="3041" class="dlgtitle" pos="165,65">正在建立索引...</text>
+    </header>
+
+    <body class="deepbluebgbody" width="full" height="full">
+        <!--一排按钮-->
+        <!--text   pos="45,13">分类查看</text-->
+        <img id="2022" class="linkimage" skin="kind" pos="0,13"/>
+        <img id="2023" class="linkimage" skin="highlevel" pos="0,54"/>
+        <imgbtn id="2001" class="linkimage" skin="allfile" pos="0,54"/>
+        <imgbtn id="2002" class="linkimage" skin="document"  pos="0,95"/>
+        <imgbtn id="2003" class="linkimage" skin="image"  pos="0,136"/>
+        <imgbtn id="2004" class="linkimage" skin="vedio" pos="0,177"/>
+        <imgbtn id="2005" class="linkimage" skin="music"  pos="0,218"/>
+        <imgbtn id="2008" class="linkimage" skin="folder"  pos="0,259"/>
+        <!--text   pos="45,326">高级查看</text-->
+        <img id="2006" class="linkimage" skin="browser"  pos="0,280"  sub="0"/>
+        <!--列表控件-->
+        <realwnd id="3050" pos="160,13,730,390"/>
+        <!--文件预览-->
+        <dlg id="7001" pos="730,13,940,400">
+            <text pos="25,1" class="dlgtitle">文件预览：</text>
+            <text id="3035"  class="text_display"  pos="710,40,-10,-0"></text>
+            <icon id="4001" src="102" pos="70,240" size="128"/>
+            <text class="dlgtitle" pos="25,260">文件类型：</text>
+            <text class="dlgtitle" pos="25,285">占用空间：</text>
+            <text class="dlgtitle" pos="25,310">创建时间：</text>
+            <text class="dlgtitle" pos="25,335">访问时间：</text>
+            <text id="3031" class="dlgtitle" pos="85,260"></text>
+            <text id="3032" class="dlgtitle" pos="85,285"></text>
+            <text id="3033" class="dlgtitle" pos="85,310"></text>
+            <text id="3034" class="dlgtitle" pos="85,335"></text>
+            <realwnd id="3060" pos="25,20,-5,-165"/>
+            <img id="3061" skin="no_preview" pos="25,40,-5,-155"/>
+        </dlg>
+        <dlg id="7002" pos="730,13,940,400">
+            <text pos="25,1" class="dlgtitle">条件搜索：</text>
+            <check id="7031" pos="25,20"></check>
+            <text pos="40,20" class="dlgtitle">按文件大小</text>
+            <check id="7021" pos="23,60" class="dlgtitle">微小(0 - 10KB)</check>
+            <check id="7022" pos="23,80" class="dlgtitle">小(10 - 100KB)</check>
+            <check id="7023" pos="23,100" class="dlgtitle">中(100KB - 1MB)</check>
+            <check id="7024" pos="23,120" class="dlgtitle">大(1 - 16MB)</check>
+            <check id="7025" pos="23,140" class="dlgtitle">超大(>16MB)</check>
+            <check id="7032" pos="23,180"></check>
+            <text pos="38,180" class="dlgtitle">按修改日期</text>
+            <realwnd id="7003" pos="90,205,200,225"/>
+            <radio id="7011" pos="23,210"></radio>
+            <text pos="35,210" class="dlgtitle">在此之前</text>
+            <realwnd id="7004" pos="90,235,200,255"/>
+            <radio id="7012" pos="23,240"></radio>
+            <text pos="35,240" class="dlgtitle">在此之后</text>
+            <radio id="7013" pos="23,300"></radio>
+            <text pos="35,300" class="dlgtitle">在此之间</text>
+            <realwnd id="7005" pos="90,280,200,300"/>
+            <realwnd id="7006" pos="90,310,200,330"/>
+        </dlg>
+        <imgbtn id="7015" class="linkimage" skin="confirm" pos="866,355"/>
+        <text id ="3030" class="dlgtitle" pos="30,390">建立索引中...</text>
+    </body>
+</layer>
+

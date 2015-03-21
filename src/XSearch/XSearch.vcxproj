@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{81F28621-22FA-45A3-B989-F136476C6165}</ProjectGuid>
+    <RootNamespace>XSearch</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../product/win32d\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../product/win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../publish/publish;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../../publish/publish;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../publish/publish;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../../publish/publish;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="kglobalkeyboardhook.cpp" />
+    <ClCompile Include="klistview.cpp" />
+    <ClCompile Include="kmaindlg.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="kfiledata\kcriticalsesion.cpp" />
+    <ClCompile Include="kfiledata\kfileconditionsearch.cpp" />
+    <ClCompile Include="kfiledata\kfilefilter.cpp" />
+    <ClCompile Include="kfiledata\kfileinfosort.cpp" />
+    <ClCompile Include="kfiledata\kfileoperation.cpp" />
+    <ClCompile Include="kfiledata\kgetfileinfothread.cpp" />
+    <ClCompile Include="kfiledata\klocker.cpp" />
+    <ClCompile Include="kfiledata\kpathbuilder.cpp" />
+    <ClCompile Include="kfiledata\kpatternmatcher.cpp" />
+    <ClCompile Include="kfiledata\kthreadcontroller.cpp" />
+    <ClCompile Include="kfiledata\kusninformation.cpp" />
+    <ClCompile Include="..\..\publish\publish\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\..\publish\publish\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\..\publish\publish\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\publish\publish\tinyxml\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="kconditionsearchtask.h" />
+    <ClInclude Include="kfiltertask.h" />
+    <ClInclude Include="kglobalkeyboardhook.h" />
+    <ClInclude Include="klistview.h" />
+    <ClInclude Include="klistviewimpl.h" />
+    <ClInclude Include="kmaindlg.h" />
+    <ClInclude Include="kmyedit.h" />
+    <ClInclude Include="ksearchtask.h" />
+    <ClInclude Include="ksorttask.h" />
+    <ClInclude Include="ktaskbase.h" />
+    <ClInclude Include="kworker.h" />
+    <ClInclude Include="otherresource.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="kfiledata\kcriticalsesion.h" />
+    <ClInclude Include="kfiledata\kfileconditionsearch.h" />
+    <ClInclude Include="kfiledata\kfilefilter.h" />
+    <ClInclude Include="kfiledata\kfileinfosort.h" />
+    <ClInclude Include="kfiledata\kfileoperation.h" />
+    <ClInclude Include="kfiledata\kgetfileinfothread.h" />
+    <ClInclude Include="kfiledata\klocker.h" />
+    <ClInclude Include="kfiledata\kpathbuilder.h" />
+    <ClInclude Include="kfiledata\kpatternmatcher.h" />
+    <ClInclude Include="kfiledata\kthreadcontroller.h" />
+    <ClInclude Include="kfiledata\kusinformation.h" />
+    <ClInclude Include="..\..\publish\publish\bkres\bkres.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkatldefine.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkbitmap.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkcolor.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkcustomwnd.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkdlgview.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkimage.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkimgbtnsized.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkimggray.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bklistbox.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bklistview.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkobject.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkrichtext2obj.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkrichtext2wnd.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkshadowwnd.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkskin.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkskinex.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkslider.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bktheme.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkwnd.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkwndcmnctrl.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkwnddlg.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkwnddlgfile.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\BkwndExDef.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkwndnotify.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkwndpanel.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkwndrichtxt.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkwndstyle.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\bkwndtabctrl.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\cargb.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\CBkDialogViewImplEx.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\CBkDrawShadowText.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\CBkMsgWnd.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\CDwmApi.h" />
+    <ClInclude Include="..\..\publish\publish\bkwin\listboxbase.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlapp.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlcrack.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlctrls.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlctrlw.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlctrlx.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlddx.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atldlgs.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlfind.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlframe.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlgdi.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlmisc.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlprint.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlres.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlresce.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlscrl.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlsplit.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atltheme.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atluser.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlwince.h" />
+    <ClInclude Include="..\..\publish\publish\wtl\atlwinx.h" />
+    <ClInclude Include="..\..\publish\publish\bkres\bkbmppool.h" />
+    <ClInclude Include="..\..\publish\publish\bkres\bkextraresdef.h" />
+    <ClInclude Include="..\..\publish\publish\bkres\bkfontpool.h" />
+    <ClInclude Include="..\..\publish\publish\bkres\bkjpgpool.h" />
+    <ClInclude Include="..\..\publish\publish\bkres\bkpngpool.h" />
+    <ClInclude Include="..\..\publish\publish\bkres\bkresutil.h" />
+    <ClInclude Include="..\..\publish\publish\bkres\bkskinpool.h" />
+    <ClInclude Include="..\..\publish\publish\bkres\bkstringpool.h" />
+    <ClInclude Include="..\..\publish\publish\miniutil\bkconsole.h" />
+    <ClInclude Include="..\..\publish\publish\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\publish\publish\tinyxml\tinyxml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\publish\publish\bkres\bkres.rc" />
+    <ResourceCompile Include="kotherres.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bkwinres.rc2" />
+    <None Include="res\antutu_frame.bmp" />
+    <None Include="res\antutu_logo.bmp" />
+    <None Include="res\beikesafe.ico" />
+    <None Include="res\btn_sys_close.bmp" />
+    <None Include="res\btn_sys_close_only.bmp" />
+    <None Include="res\btn_sys_maximize.bmp" />
+    <None Include="res\btn_sys_minimize.bmp" />
+    <None Include="res\btn_sys_restore.bmp" />
+    <None Include="res\def_skin.xml" />
+    <None Include="res\def_string.xml" />
+    <None Include="res\def_style.xml" />
+    <None Include="res\dlg_main.xml" />
+    <None Include="res\logo_module.png" />
+    <None Include="res\msgbox_bg.bmp" />
+    <None Include="res\small.ico" />
+    <None Include="res\tab_main.bmp" />
+    <None Include="res\tab_main_splitter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\XSearch.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

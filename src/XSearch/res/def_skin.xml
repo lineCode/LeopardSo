@@ -1,0 +1,19 @@
+﻿<skins>
+  <png name="allfile" src="10" subwidth="143"/>
+  <png name="highlevel" src="28" subwidth="143"/>
+  <png name="document" src="11" subwidth="143"/>
+  <png name="image" src="12" subwidth="143"/>
+  <png name="vedio" src="13" subwidth="143"/>
+  <png name="music" src="14" subwidth="143"/>
+  <png name="kind" src="26" subwidth="143"/>
+  <png name="deepbluebg" src="15" />
+  <png name="deepbluebgbody" src="15" top="90"/>
+  <png name="deepbluebgfooter" src="15" top="470"/>
+  <png name="closebtn" src="16" subwidth="18"/>
+  <png name="browser" src="17"  subwidth="143"/>
+  <png name="lucase" src="19" subwidth="70"/>
+  <png name="folder" src="20" subwidth="143"/>
+  <png name="detailsearch" src="21" subwidth="70"/>
+  <png name="confirm" src="22" subwidth="64"/>
+  <png name="no_preview" src="23" subwidth="180"/>
+</skins>
